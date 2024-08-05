@@ -1,0 +1,12 @@
+<div style="display:flex;flex-direction:column">
+  <div style="border-left:thick solid rgba(0,0,0,0.2);padding-left:10px">
+    <p><strong><%= params['question'] %></strong></p>
+    <p><em>- You</em></p>
+  </div>
+  <br>
+  <div style="border-left:thick solid rgba(0,0,0,0.2);padding-left:10px;background-color:#FAEDB3">
+    <p><strong><%=@answer%></strong></p>
+    <p><em>- Your coach</em></p>
+  </div>
+  <%= link_to "Ask another question", ask_path %>
+</div>
